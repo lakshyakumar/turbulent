@@ -6,4 +6,3 @@ export function useContract(contractAddress: any, contractABI: any) {
     const contract = new web3.eth.Contract(contractABI, contractAddress);
     return contract;
 }
-

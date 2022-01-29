@@ -175,4 +175,3 @@ export function useWeb3Modal(): Props {
         disconnect: disconnect
     };
 }
-
