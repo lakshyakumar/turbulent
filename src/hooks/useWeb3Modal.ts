@@ -26,7 +26,7 @@ const sharedState = createGlobalState<Props>({
     createTransaction: () => undefined
 });
 
-function useWeb3Modal(): Props {
+export function useWeb3Modal(): Props {
     const [state, setState] = sharedState();
     const web3Ref = useRef<any>();
     const providerOptions = {
@@ -176,4 +176,3 @@ function useWeb3Modal(): Props {
     };
 }
 
-export default useWeb3Modal;
