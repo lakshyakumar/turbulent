@@ -2,6 +2,25 @@
   "name": "turbulent",
   "version": "1.0.0",
   "description": "Blockchain Interface Hook Library",
+  "keywords": [
+    "reactjs",
+    "nextjs",
+    "library",
+    "web3",
+    "blockchain",
+    "wallet-connect",
+    "web3Modal",
+    "hooks"
+  ],
+  "homepage": "https://github.com/lakshyakumar/turbulent",
+  "bugs": {
+    "url": "https://github.com/lakshyakumar/turbulent/issues",
+    "email": "lklsquare@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakshyakumar/turbulent.git"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -14,6 +33,7 @@
   },
   "author": "lklsquare",
   "license": "MIT",
+  "private": false,
   "devDependencies": {
     "@types/node": "^17.0.13",
     "@types/react": "^17.0.38",
