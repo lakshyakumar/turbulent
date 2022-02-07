@@ -17,13 +17,13 @@ npm install turbulent
 import { web3Modal, useContract } from 'turbulent';
 
 # Extracting the features from the 'useWeb3Modal' hook
-const { connect, connected, address, balance, chainId } = useWeb3Modal();
+const { connect, connected, address, balance, chainId } = useWeb3Modal('Infura key');
 
 # Use 'connect' function
 <button onClick={connect}> Connect </button>
 
 # use 'useContract' hook to call methods from the contract
-const Contract = useContract(contractAddress, contractABI);
+const Contract = useContract(contractAddress, contractABI, 'Infura key');
 const balance = await Contract.methods.balanceOf(address).call();
 ```
 

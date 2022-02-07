@@ -26,14 +26,14 @@ const sharedState = createGlobalState<Props>({
     createTransaction: () => undefined
 });
 
-export function useWeb3Modal(): Props {
+export function useWeb3Modal(key: string): Props {
     const [state, setState] = sharedState();
     const web3Ref = useRef<any>();
     const providerOptions = {
         walletconnect: {
             package: WalletConnectProvider, // required
             options: {
-                infuraId: '08c624bf743a4f67918ae51104ca5e63' // required
+                infuraId: key // required
             }
         }
     };
